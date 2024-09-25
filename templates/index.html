@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Demo</title>
+
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="mx-4 my-8 p-4">
+
+        <p class="text-2xl font-bold mb-4 text-center">Movie List</p>
+        
+            <table class="min-w-[50%] mb-4 mx-auto">
+                <thead class="border-b text-lg">
+                    <tr>
+                      <th class="border">Film Name</th>
+                      <th class="border">Director</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-center text-sm" id="table-body">
+                    {%include "table.html"%}
+            
+                  </tbody>
+            </table>
+                
+    </div>
+</body>
+</html>
